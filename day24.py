@@ -25,7 +25,7 @@ for a in range(4,7):
             print (i)
             remains = [x for x in packages if x not in i]
             for c in range (4,12):
-                print (c)
+                # print (c)
                 comb2 = list(itertools.combinations(remains, c))
                 for b in comb2:
                     if (int(sum(b))) == target_weight:
@@ -47,7 +47,7 @@ for a in range(4,6):
             print (i)
             remains = [x for x in packages if x not in i]
             for c in range (4,12):
-                print (c)
+                # print (c)
                 comb2 = list(itertools.combinations(remains, c))
                 for b in comb2:
                     if (int(sum(b))) == target_weight:
@@ -68,8 +68,8 @@ for a in range(4,6):
                         break
 
 
-# print (str(first_group), str(lowest_qe))
-print (str(first_group2), str(lowest_qe2))
+print ("Answer for part one: (" + str(first_group) + ") " + str(lowest_qe))
+print ("Answer for part two: (" + str(first_group2) + ") " + str(lowest_qe2))
 
 
 
