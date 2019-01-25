@@ -20,9 +20,10 @@ for a in range(4,7):
     comb = list(itertools.combinations(packages, a))
     # print(str(len(comb)))
     for i in comb:
+        test = 0
         if (int(sum(i))) == target_weight:
-            i = sorted(i)
             print (i)
+            i = sorted(i)
             remains = [x for x in packages if x not in i]
             for c in range (4,12):
                 # print (c)
@@ -33,7 +34,10 @@ for a in range(4,7):
                         if qe < lowest_qe and a==6:
                             lowest_qe = qe
                             first_group = i
+                            test=1
                         break
+                if test == 1:
+                    break
 
 target_weight = int(sum(packages)/4)
 
